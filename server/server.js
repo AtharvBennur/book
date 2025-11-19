@@ -1,7 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs').promises;
+const fsSync = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const app = express();
 const http = require('http');
@@ -463,7 +465,22 @@ app.delete('/api/books/:id', async (req, res) => {
 });
 
 // Serve client build if present
-const clientDist = path.join(__dirname, '..', 'client', 'build');
+const clientRoot = path.join(__dirname, '..', 'client');
+const clientDist = path.join(clientRoot, 'build');
+
+function ensureClientBuild() {
+	const indexHtml = path.join(clientDist, 'index.html');
+	if (!fsSync.existsSync(indexHtml)) {
+		console.log('Client build not found. Building frontend...');
+		try {
+			execSync('npm run build', { cwd: clientRoot, stdio: 'inherit' });
+			console.log('Client build complete.');
+		} catch (err) {
+			console.error('Failed to build client automatically. You may need to run "cd client && npm run build" manually.', err);
+		}
+	}
+}
+ensureClientBuild();
 app.use(express.static(clientDist));
 app.get('*', (req, res, next) => {
 	// If the request looks like an API request, skip
