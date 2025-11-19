@@ -1,0 +1,35 @@
+[
+  {
+    "id": "mi601amoq4jgol",
+    "name": "atharv bennur",
+    "email": "atharvbennur@gmail.com",
+    "passwordHash": "$2a$10$R29eJk3F9Nq/5JI3IVNz5u2UErQPLkfKfn7I47iMwAIhrRqgT5ngm",
+    "bio": "",
+    "createdAt": "2025-11-19T12:49:09.648Z"
+  },
+  {
+    "id": "mi6078lbesocf9",
+    "name": "kjasbd",
+    "email": "atharv@gmail.com",
+    "passwordHash": "$2a$10$r7n86BKtlRu3nqnVR.uph.6jY3UQsojOYE44JKkFK10zLCZj/39mq",
+    "bio": "",
+    "createdAt": "2025-11-19T12:53:46.943Z",
+    "favorites": []
+  },
+  {
+    "id": "mi6135kwo704j1",
+    "name": "aaa",
+    "email": "aa@gmail.com",
+    "passwordHash": "$2a$10$76Adh6mYyPdhv/T5FjYHVe9Zj1tySda0/V8kKX7OZ7uPQnpq59vjW",
+    "bio": "",
+    "createdAt": "2025-11-19T13:18:36.032Z"
+  },
+  {
+    "id": "mi64qsmq23ct9d",
+    "name": "Abhishek",
+    "email": "abhi@gmail.com",
+    "passwordHash": "$2a$10$jaGgyypJHgqAufAqFHA8mOZWDIMEMHt2QIRs5MlSg1gVYrmuPcT4a",
+    "bio": "",
+    "createdAt": "2025-11-19T15:00:57.842Z"
+  }
+]

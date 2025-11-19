@@ -1,0 +1,22 @@
+[
+  {
+    "id": "mi613928qb74ze",
+    "bookId": "mi611z35845yrd",
+    "requesterId": "mi6135kwo704j1",
+    "ownerId": "mi6078lbesocf9",
+    "message": "I'd like to request aaa",
+    "status": "accepted",
+    "createdAt": "2025-11-19T13:18:40.544Z",
+    "acceptedAt": "2025-11-19T13:19:05.601Z"
+  },
+  {
+    "id": "mi64rocwn3vb0n",
+    "bookId": "mi63ty82b76xlr",
+    "requesterId": "mi64qsmq23ct9d",
+    "ownerId": "mi6078lbesocf9",
+    "message": "I'd love to exchange for To Kill a Mockingbird",
+    "status": "accepted",
+    "createdAt": "2025-11-19T15:01:38.960Z",
+    "acceptedAt": "2025-11-19T15:03:24.436Z"
+  }
+]
